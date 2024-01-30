@@ -1,0 +1,25 @@
+package TestRunner;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import org.junit.runner.RunWith;
+import org.testng.annotations.DataProvider;
+
+import io.cucumber.junit.Cucumber;
+
+
+
+//@RunWith(Cucumber.class)
+@CucumberOptions( features= "/BDDFramework/src/test/resources/Features",
+glue= "StepDefinitions")
+
+public class Runner extends AbstractTestNGCucumberTests{
+	
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
+
+
+}

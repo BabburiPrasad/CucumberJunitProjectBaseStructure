@@ -1,0 +1,5 @@
+Feature: Login functionality for Open-eCart
+
+As a user of Open-eCart website
+I want to be able to login with my account
+So that I can access my account-related features
